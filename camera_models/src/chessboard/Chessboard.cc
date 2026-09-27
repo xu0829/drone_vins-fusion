@@ -1,3 +1,10 @@
+// VINS_OPENCV4_COMPAT: OpenCV 4 兼容头。由 tools/apply_opencv4_compat.sh 插入。
+// 这些 C 风格常量在 OpenCV 4 里已不再由 opencv2/opencv.hpp 自动带出，需显式包含。
+#include <opencv2/core/types_c.h>                 // 终止条件常量
+#include <opencv2/imgproc/types_c.h>              // 阈值/连通域/颜色转换/形态学常量
+#include <opencv2/imgproc/imgproc_c.h>            // 抗锯齿线型、字体常量
+#include <opencv2/calib3d/calib3d_c.h>            // 棋盘格检测标志
+#include <opencv2/imgcodecs/legacy/constants_c.h> // 图像读取模式常量
 #include "camodocal/chessboard/Chessboard.h"
 
 #include <opencv2/calib3d/calib3d.hpp>
